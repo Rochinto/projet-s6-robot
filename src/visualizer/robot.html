@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Robot Programming Visualizer</title>
+    <style>
+      body {
+    	  background-color: #404040;
+    	  color: #eee;
+    	  font-family: Helvetica, Arial;
+      }
+      div#visualizer {
+          font: 25px/25px Arial;
+          width: 680px; height: 720px;
+          background: #333;
+          margin: auto;
+      }
+      #visualizer table {
+          border-collapse: collapse;
+          margin: auto;
+      }
+      #visualizer_board td {
+          width: 40px; height: 40px;
+	  text-align: center;
+          padding: 0px;
+          font-family: 'robots';
+          font-size:24px;
+      }
+      #visualizer_board td.red_tile {
+          border: 1px solid gray;
+          background: linear-gradient(to top left, #ff0000, #993333);
+      }
+      #visualizer_board td.green_tile {
+          border: 1px solid gray;
+          background: linear-gradient(to top left, #00aa44, #337733);
+      }
+      #visualizer_board td.blue_tile {
+          border: 1px solid gray;
+          background: linear-gradient(to top left, #0044ff, #333399);
+      }
+      #visualizer_buttons {
+	  text-align: center;
+      }
+      @font-face {
+          font-family: 'robots';
+          src: url('./robot.ttf') format('truetype');
+      }
+    </style>
+  </head>
+  <body>
+    <div id="visualizer">
+      <table>
+        <tbody id="visualizer_board">
+
+        </tbody>
+      </table>
+      <div id="visualizer_buttons">
+        <input type="number" name="Select puzzle" id="puzzle_id" max="2" min="0" step="1">
+        <button id="button_refresh" onclick="">Refresh puzzle</button>
+        <button id="button_generate">Generate resolvable puzzle</button>
+        <button id="button_generate_random">Generate random puzzle</button>
+        <button id="button_move">Move me !</button>
+      </div>
+
+      <table>
+        <tbody id="visualizer_instructions">
+          
+        </tbody>
+      </table>
+
+    </div>
+  </body>
+  <script type="module" src="displayer.js"> </script>
+</html>

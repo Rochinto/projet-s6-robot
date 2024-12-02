@@ -1,0 +1,64 @@
+{
+    "id":0,
+    "title":"Right on red",
+    "height":12,
+    "width":16,
+    "initial_x":0,
+    "initial_y":0,
+    "initial_dir":{
+	"x":1,
+	"y":0
+    },
+    "initial_gas":-1,
+    "instruction_types":{
+        " ":null,
+        "l":"turnLeft",
+        "r":"turnRight",
+        "m":"move",
+        "b":"turnTwice",
+        "R":"paintRed",
+        "G":"paintGreen",
+        "B":"paintBlue",
+        "1":1,
+        "2":2
+    },
+    "nb_functions":1,
+    "functions":{
+        "F1":2
+    },
+    "tile_types":{
+        " ":{
+            "color":"black",
+            "cond":"none"
+        },
+        "r":{
+            "color":"red",
+            "cond":"any"
+        },
+        "g":{
+            "color":"green",
+            "cond":"any"
+        },
+        "b":{
+            "color":"blue",
+            "cond":"any"
+        },
+        "B":{
+            "color":"Blue",
+            "cond":"any"
+        }
+    },
+    "world":[
+            "bbbbbbbbbbbbbbB ",
+            "                ",
+            "                ",
+            "                ",
+            "                ",
+            "                ",
+            "                ",
+            "                ",
+            "                ",
+            "                ",
+            "                ",
+            "                " ]
+}

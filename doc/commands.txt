@@ -1,0 +1,6 @@
+
+JEST:
+node --experimental-vm-modules ~/Node/node_modules/jest/bin/jest.js --coverage
+
+ESLINT:
+~/Node/node_modules/.bin/eslint -c ~/Node/.eslintrc.js <file_path>
